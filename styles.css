@@ -383,7 +383,7 @@
 .section-5-footer{
     width: 100%;
     height:fit-content;
-    margin-top: 30px;
+    margin: 30px auto;
 }
 .section-5-head{
     width: 80%;
@@ -408,9 +408,12 @@
 .section-5-cards{
     display: flex;
     flex-direction: column;
-    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
     width: 100%;
-    height:50%;
+    height:20%;
+    padding: 1%;
 }
 .section-5-footer-elements{
     display: flex;
@@ -424,45 +427,56 @@
     /* align-items: center; */
 }
 .section-5-footer-elements-heading{
-    font-size:30px;
-    padding:5%; 
+    font-size:25px;
+    padding:1%; 
     /* font: bold; */
     /* line-height: 3%; */
     font-weight: bold;
     /* font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
 }
 .section-5-footer-elements-para{
-    padding: 5%;
+    padding: 1%;
     color: #2C2C2C;
-    font-size: 30px;
+    font-size: 20px;
 
 }
 .section-6{
     width: 100%;
     height: 1290px;
+    /* height: fit-content; */
+    height: 420%;
     background-color: #000000;
     padding:120px 50px;
     
 }
 .section-6-head{
-    width: 50%;
+    width: 100%;
     height: 65px;
+    margin: 0 auto;
     color: white;
     font-size: 50px;
-    margin-bottom: 60px;
+    text-align: center;
+    /* margin-bottom: 60px; */
 
 }
 
 .section-6-members{
     display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    flex-wrap: wrap;
+    /* justify-content: center; */
     margin: 0 3px;
+    /* margin: 0 auto; */
     height: 100%;
+    /* height: 30%; */
 }
 .section-6-members-list{
     display: flex;
     flex-direction: column;
     width: 417px;
-    height: 450px;
+    /* height: 450px; */
+    height: 33%;
     /* padding: 20px; */
 }
 .section-6-members-lists{
@@ -483,6 +497,11 @@
     font-size: 27px;
     margin: auto 0;
 }
+.custom-flex{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+}
 .section-7{
     width: 100%;
     height: 1183px;
@@ -492,8 +511,8 @@
     justify-content: space-between;
 }
 .section-7-head{
-    width: 843px;
-    height: 65px;
+    width: 80%;
+    height: 10%px;
     margin: 0 auto;
     margin-bottom:60px;
     text-align: center;
@@ -518,13 +537,15 @@
 }
 .section-8{
     width: 100%;
-    height:934px;
+    height:fit-content;
     background-color: #0000FF;
     padding: 120px 50px;
     display: flex;
+    flex-direction: column;
+    margin-top: 8%;
 }
 .section-8-left{
-    width: 717px;
+    width: 100%;
     height: 624px;
     display: flex;
     flex-direction: column;
@@ -534,14 +555,15 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 300px;
+    height: 70%;
     justify-content: space-around;
     align-items: start;
 }
 .section-8-left-elements h1{
-    width: 717px;
-    height: 60px;
-    font-size: 60px;
+    width: 70%;
+    height: 10%;
+    font-weight: 600;
+    font-size: 40px;
     color: white;
     margin-bottom: 60px;
 }
@@ -550,6 +572,7 @@
     font-weight: bold;
     color: white;
     font-size: 20px;
+    margin-top: 4%;
 }
 .section-8-left-elements button{
     width: 226px;
@@ -568,14 +591,14 @@
     justify-content: space-around;
 }
 .section-8-right-elements{
-    width: 100%;
+    width: 80%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
 
 .section-8-right-elements-brands{
-    width: 100%;
+    width: 80%;
     height: 102px;
     display: grid;
     grid-area: 1 1 3 4;
@@ -587,7 +610,7 @@
     width: 20px;
 } */
 .section-8-right-elements p{
-    width: 100%;
+    width: 80%;
     margin-bottom: 30px;
     color: white;
     font-size: 20px;
@@ -656,15 +679,20 @@
 }
 .footer{
     width:100%;
-    height:515px;
+    /* height:515px; */
     display: flex;
     flex-direction: column;
 }
 .footer-top{
     display: flex;
+    /* flex-direction: column; */
     justify-content: space-between;
+    /* align-self: start; */
+    flex-wrap: wrap;
+    gap: 20px;
     padding: 80px 50px;
-    height: 405px;
+    /* height: 405px; */
+    height: fit-content;
     border-bottom: 1px solid rgb(225, 220, 220);
 }
 .footer-top-elements{
@@ -702,6 +730,7 @@
 
 .footer-bottom{
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     width: 100%;
     height: 109px;
@@ -710,6 +739,7 @@
 }
 .footer-brands{
     display: flex;
+    width: 70%;
     /* flex-wrap: wrap; */
 }
 .brand{
@@ -829,6 +859,31 @@
         width: 60%;
     
     }
+    .section-5-cards{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-self: start;
+    }
+    .section-5-footer-elements{
+        width: 30%;
+        height: 30%;
+    }
+    .section-6{
+        height: 410%;
+    }
+    .section-6-members{
+        flex-direction: row;
+        margin: 0 auto;
+        /* justify-content: center; */
+        /* height: 80%; */
+        /* flex-wrap: wrap; */
+        /* height: 300%; */
+    }
+    .footer-bottom{
+        flex-direction: row;
+    }
+    
 }
 
 /* lg: applies the styles at 1024px and up */
@@ -902,6 +957,9 @@
         height: 40%;
     
     }
+   .section-8{
+    flex-direction: row;
+   }
 }
 
 /* xl: applies the styles at 1280px and up */
@@ -979,6 +1037,15 @@
         height: 40%;
     
     }
+    .section-6{
+        height: 180%;
+    }
+  
+    .section-6-members{
+        /* height: 10%; */
+        justify-content: center;
+    }
+   
 }
 
 /* 2xl: applies the styles at 1536px and up */
@@ -1052,5 +1119,11 @@
         width: 40%;
         height: 40%;
     
+    }
+    .section-6-members-list{
+        height: 50%;
+    }
+    .section-6-members{
+        justify-content: center;
     }
 }
