@@ -870,7 +870,8 @@
         height: 30%;
     }
     .section-6{
-        height: 410%;
+        /* height: 410%; */
+        height: fit-content;
     }
     .section-6-members{
         flex-direction: row;
